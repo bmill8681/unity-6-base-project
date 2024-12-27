@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Menus/MainMenu.uss?fileID=7433441132597879392&amp;guid=ede1f5f0fa5890442b348b30ffebd469&amp;type=3#MainMenu" />
+    <ui:VisualElement name="Background" style="flex-grow: 1; background-color: rgb(255, 255, 255); background-size: 130% 100%; background-image: url(&quot;project://database/Assets/Menus/MainMenuBG.png?fileID=2800000&amp;guid=257696cc7c480bc47b39dca0a35b851e&amp;type=3#MainMenuBG&quot;); background-position-x: left 0;">
+        <ui:GroupBox name="MainMenuGroup" style="width: 100%; height: 100%; opacity: 1; position: absolute; top: 0; left: 0; right: 0; bottom: 0;">
+            <ui:Label text="Game Title" name="Title" style="top: 100px; align-items: auto; align-content: auto; align-self: flex-start; -unity-text-align: upper-center; font-size: 72px; position: absolute; -unity-font-style: bold; background-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255); left: 50px;" />
+            <ui:VisualElement name="ButtonGroup" style="flex-grow: 1; width: 300px; padding-top: 40px; padding-right: 40px; padding-bottom: 40px; padding-left: 40px; align-self: flex-start; justify-content: flex-start; margin-top: 250px;">
+                <ui:Button text="Play" name="PlayButton" style="font-size: 24px; -unity-font-style: bold;" />
+                <ui:Button text="Settings" name="SettingsButton" style="margin-top: 20px; margin-bottom: 20px; font-size: 24px; -unity-font-style: bold;" />
+                <ui:Button text="Quit" name="QuitButton" style="margin-top: 160px; font-size: 24px; -unity-font-style: bold;" />
+            </ui:VisualElement>
+        </ui:GroupBox>
+        <ui:GroupBox name="SettingsMenuGroup" style="width: 100%; height: 100%; position: absolute; align-self: auto; top: 0; left: 350px; bottom: 0; right: 0; opacity: 0; justify-content: flex-start; align-items: flex-start; align-content: auto; display: none;">
+            <ui:VisualElement name="VisualElement" style="flex-grow: 1; width: 500px; justify-content: flex-start; align-items: center; left: auto; height: 100%; flex-direction: column; padding-top: 0; top: 250px;">
+                <ui:Slider label="Master Volume" value="42" high-value="100" name="MasterVolumeSlider" fill="false" show-input-field="false" inverted="false" style="width: 100%; flex-direction: column; font-size: 24px; color: rgb(255, 255, 255); -unity-font-style: bold; -unity-text-outline-width: 0; margin-bottom: 20px; padding-bottom: 20px;" />
+                <ui:Slider label="Music Volume" value="42" high-value="100" name="MusicVolumeSlider" fill="false" show-input-field="false" style="width: 100%; flex-direction: column; font-size: 24px; color: rgb(255, 255, 255); -unity-font-style: bold; -unity-text-outline-width: 0; margin-bottom: 20px; padding-bottom: 20px;" />
+                <ui:Slider label="SFX Volume" value="42" high-value="100" name="SfxVolumeSlider" fill="false" show-input-field="false" style="width: 100%; flex-direction: column; font-size: 24px; color: rgb(255, 255, 255); -unity-font-style: bold; -unity-text-outline-width: 0; margin-bottom: 20px; padding-bottom: 20px;" />
+                <ui:GroupBox style="background-size: 100% 100%; width: 100%; margin-top: 80px;">
+                    <ui:Button text="Back" name="BackButton" enable-rich-text="true" style="width: 200px; font-size: 24px; -unity-font-style: bold;" />
+                </ui:GroupBox>
+            </ui:VisualElement>
+        </ui:GroupBox>
+    </ui:VisualElement>
+</ui:UXML>
